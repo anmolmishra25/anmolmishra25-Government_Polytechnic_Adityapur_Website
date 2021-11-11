@@ -1,0 +1,727 @@
+<html>
+    <head>
+        <title>About Us | GP Adityapur</title>
+        <link rel="stylesheet" href="css/font-awesome.css" type="text/css"/>
+        <style type="text/css">
+            body
+            {
+                background:rgb(194, 211, 212);
+                margin:0;
+                padding:0;
+            }
+            #mainarea
+            {
+                width:100%;
+                height:2900px;
+                margin:0;
+                padding:0;
+                font-size:30px;
+            }
+            #colorarea
+            {
+                width:100%;
+                float:left;
+                height:260px;
+                margin:0;
+                padding:0;
+                background:rgb(0, 132, 255);
+                box-shadow: 0px 0px 5px 0px black;
+            }
+            #update
+            {
+                width:100%;
+                height:30px;
+                float:left;
+                margin:0;
+                padding-top:5px;
+                text-align: center;
+                font-size:20px;
+                background:black;
+                color:white;
+            }
+            #logo
+            {
+                width:100%;
+                height:180px;
+                margin:0;
+                padding:0;
+                float:left;
+                text-align: center;
+            }
+            #logo #image 
+            {
+                width:20%;
+                height:180px;
+                float:left;
+            }
+            #logo #collegename
+            {
+                width:80%;
+                height:140px;
+                float:left;
+                font-size:48px;
+                padding:40px 0px 0px 0px;
+                color:white;
+                text-shadow:2px 2px 3px black;
+                word-spacing:10px;
+                font-family:  monospace;
+                font-weight:bold;
+            }
+            #menu
+            {
+                width:100%;
+                height:50px;
+                margin:0;
+                padding:0;
+                float:left;
+                font-weight:bold;
+                font-family: sans-serif;
+            }
+            #menu ul
+            {
+                list-style-type:none;
+                margin:0;
+                padding:0;
+            }
+            #menu ul li
+            {
+                transition: all 1s;
+                margin:0;
+                float:left;
+                font-size:15px;
+            }
+            #menu ul li a:link , #menu ul li a:visited
+            {
+                text-decoration:none;
+                color:white;
+                padding:18px 15px;
+                display: block;
+            }
+            #menu ul li:nth-child(2) i
+            {
+                color:brown;
+            }
+            #menu ul li:hover
+            {
+                font-size:16px;
+                background:black;
+            }
+            #menu ul li #color
+            {
+                color:brown;
+            }
+            #college
+            {
+                width:70%;
+                height:200px;
+                float:left;
+                text-align:center;
+                margin:0px 15% 0px 15%;
+                border-radius:0px 0px 50% 50%;
+                background:rgba(0, 132, 255, 0.801);
+            }
+            #tech
+            {
+                font-size:18px;
+                font-weight:bold;
+                color:black;
+                text-shadow:none;
+                word-spacing:none;
+                font-family:  sans-serif;
+            }
+            #paranotice
+            {
+                width:100%;
+                height:400px;
+                float:left;
+                margin:0;
+                padding:0;
+            }
+            #paragraph
+            {
+                width:60%;
+                height:400px;
+                float:left;
+                margin:0;
+                padding:0px 2% 0px 3%;
+            }
+            h3
+            {
+                color:white;
+                text-shadow:2px 2px 3px black;
+                word-spacing:10px;
+                font-family:  monospace;
+            }
+            #college h3
+            {
+                color:white;
+                text-shadow:2px 2px 3px black;
+                word-spacing:10px;
+                font-family:  monospace;
+                background:rgba(0, 0, 0, 0.377);
+                margin:0;
+                padding:30px 0px;
+            }
+            #paragraph #size
+            {
+                font-size:21px;
+                text-align: justify;
+                font-style: italic;
+            }
+            #more
+            {
+                width:16%;
+                height:24px;
+                float:left;
+                margin:0px 80% 0px 0px;
+                padding:8px 2%;
+                background:rgb(61, 60, 60);
+                border-radius: 10px;
+                box-shadow: 2px 3px 10px black;
+                color:white;
+                font-size:20px
+            }
+           #more ul
+           {
+               list-style-type:none;
+               margin:0;
+               padding:0;
+           }
+           #more a:link, #more a:visited
+           {
+               color:white;
+               text-decoration:none;
+               display:block;
+           }
+            #inotice
+            {
+                width:31%;
+                height:360px;
+                margin:20px 2%;
+                padding:0;
+                background:white;
+                border-radius:10%;
+                box-shadow:0px 0px 5px 0px black;
+                float:left;
+            }
+            #label
+            {
+                width:100%;
+                height:50px;
+                float:left;
+                margin:0;
+                padding:0;
+                color:rgb(255, 0, 13);
+                text-align:center;
+                font-weight:bold;
+                font-family:'Courier New', Courier, monospace;
+            }
+            #information 
+            {
+                width:100%;
+                height:310px;
+                float:left;
+                margin:0;
+                padding:0;
+                border-radius: 10%;
+                font-size:15px;
+            }
+            #information ul
+            {
+                list-style-type:square;
+            }
+            #information ul li a:link , #information ul li a:visited
+            {
+                text-decoration: none;
+                color:blue;
+            }
+            #information ul li a:hover
+            {
+                color:red;
+            }
+            #principle
+            {
+                width:100%;
+                height:335px;
+                float:left;
+                margin:0;
+                padding:0;
+            }
+            .meet
+            {
+                width:40%;
+                height: 60px;
+                float:left;
+                background:rgb(61, 60, 60);
+                margin:30px 30% 30px 30%;
+                padding:20px 0px 0px 0px;
+                border-radius:20px;
+                text-align:center;
+                color:white;
+                font-size:35px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight:bold;
+                box-shadow:0px 0px 5px 0px rgb(36, 33, 33);
+            }
+            #statement
+            {
+                height:2020px;
+                width:90%;
+                float:left;
+                margin:0;
+                padding:50px 5%;
+                font-size:18px;
+                font-family: sans-serif;
+                text-align:justify;
+            }
+            #statement table
+            {
+                width:100%;
+                height:100%;
+                border-collapse:collapse;
+                background:rgb(235, 230, 230);
+                box-shadow:0px 0px 10px 0px black;
+            }
+            #statement table a:link, #statement table a:visited
+            {
+                text-decoration: none;
+                color:blue;
+            }
+            tr:hover
+            {
+                background:rgb(0, 132, 255);
+            }
+            tr:first-child
+            {
+                background:rgb(59, 58, 58);
+                color:white;
+            }
+            table,tr
+            {
+                border:solid black 1px;
+            }
+            td,th
+            {
+                border:solid black 1px;
+                padding:0px 0px 0px 10px;
+            }
+            h2
+            {
+                color:rgb(0, 132, 255);
+                font-weight:bold;
+                text-shadow:1px 2px 1px black;
+            }
+            #footerarea
+            {
+                width:100%;
+                height:400px;
+                padding:0;
+                margin:0;
+                float:left;
+                background:rgb(34, 36, 34);
+            }
+            .foot
+            {
+                width:19%;
+                height:360px;
+                padding:20px 3%;
+                margin:0;
+                float:left;
+                color:white;
+                font-size:20px;
+            }
+            .foot h3
+            {
+                color:white;
+                font-size:25px;
+                font-weight: lighter;
+            }
+            .foot ul
+            {
+                color:blue;
+                list-style-type: none;
+                margin:0px;
+                padding:0px;
+            }
+            .foot a:link, .foot a:visited
+            {
+                text-decoration:none;
+                color:rgb(44, 44, 255);
+            }
+            .foot a:hover
+            {
+                color:rgb(35, 35, 173)
+            }
+            .foot ol
+            {
+                color:rgb(44, 44, 255);
+                list-style-type: none;
+                margin:0px;
+                padding:0px;
+            }
+            .foot ol a:link, .foot ol a:visited
+            {
+                text-decoration:none;
+                color:rgb(180, 180, 179);
+            }
+            .foot ol a:hover
+            {
+                color:white;
+            }
+            .foot ol li
+            {
+                transition: transform 2s;
+            }
+            .foot ol li:hover
+            {
+                transform: translateX(20px);
+            }
+            #develop
+            {
+                width:100%;
+                height:50px;
+                background:rgb(34, 36, 34);
+                float:left;
+                text-align:center;
+                margin:0;
+                padding:0;
+                font-size:20px;
+                color:rgb(175, 175, 175)
+            }
+            #develop a:visited, #develop a:link
+            {
+                color:rgb(44, 44, 255);
+                text-decoration: none;;
+            }
+            #develop a:hover
+            {
+                color:rgb(35, 35, 173);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mainarea">
+            <div id="colorarea">
+                <div id="update">
+                    This site is updated on 31th december 2020
+                </div>
+                <div id="logo">
+                    <div id="image">
+                        <img src="logo.png"/>
+                    </div>
+                    <div id="collegename">
+                        GOVERNMENT POLYTECHNIC, ADITYAPUR
+                        <p id="tech">Department of Higher, Technical Education & Skill Development, Govt. of Jharkhand</p>             
+                    </div>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="main.html" ><i class="fa fa-home "></i> HOME</a></li>
+                        <li><a href="aboutus.html" ><i class="fa fa-list"></i> ABOUT US</a></li>
+                        <li><a href="admission.html"><i class="fa fa-graduation-cap"></i> ADMISSION</a></li>
+                        <li><a href="faculties.html"><i class="fa fa-user"></i> FACULTIES</a></li>
+                        <li><a href="notice.html"><i class="fa fa-file-pdf-o"></i> NOTICE</a></li>
+                        <li><a href="gallery.html"><i class="fa fa-camera"></i> GALLERY</a></li>
+                        <li><a href="contact.html"><i class="fa fa-phone-square"></i> CONTACT US</a></li>
+                        <li><a href="grievance.html"><i class="fa fa-envelope"></i> GRIEVANCE</a></li>
+                        <li><a href="disclosure.html" id="color"><i class="fa fa-file"></i> MANDETORY DISCLOSURE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="meet">
+                MANDETORY DISCLOSURE
+            </div> 
+            <div id="statement">
+               <table>
+                    <tr>
+                        <th>Sl. No.	</th>
+                        <th>Particulars</th>
+                        <td><strong>Inforamtion</strong></td>
+                    </tr>
+                    <tr>
+                        <th>01.</th>
+                        <td><strong>Name of the Institution</strong></td>
+                        <td><strong>Government Polytechnic Adityapur</strong>
+                            <br>P.O. - Adityapur Industrial Area, Adityapur
+                            <br>Seraikella- Kharsawan, Jharkhand
+                            <br>PIN - 832109<br>
+                            <strong>Phone - </strong><a href="tel:0657-2383303">0657-2383303</a>
+                            <br><strong>Phone - </strong><a href="https://mail to:gpa2010@rediffmail.com">gpa2010@rediffmail.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>02.</th>
+                        <td><strong> Name and address of the Trust/ Society/ Company and the Trustees</strong</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <th>03.</th>
+                        <td><strong> Name of the Principal</strong></td>
+                        <td><strong>Mr. Birendra Prasad</strong>
+                            <br>Govt. Polytechnic Adityapur
+                            <br>P.O. - Adityapur Industrial Area, Adityapur
+                            <br>Seraikella- Kharsawan, Jharkhand
+                            <br>PIN - 832109<br><br>
+                            <strong>Phone - </strong><a href="tel:9431727156">9431727156</a>
+                            <br><strong>Phone - </strong><a href="https://mail to:prasadbirendra27@gmail.com">prasadbirendra27@gmail.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>04.</th>
+                        <td><strong>Name of the affiliating University</strong></td>
+                        <td>Jharkhand University of Technology</td>
+                    </tr>
+                    <tr>
+                        <th>05.</th>
+                        <td><strong>Governance</strong></td>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>i. Members of the Board</strong</td>
+                        <td><a href="https://www.gpadp.org.in/information/gpa_bog.pdf">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>ii. Organization Chart</strong</td>
+                        <td><a href="https://www.gpadp.org.in/information/chart.pdf">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>iii. Anti-Ragging Committee</strong</td>
+                        <td><a href="https://www.gpadp.org.in/information/anti_ragging_committtee.pdf">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>iv. Grievance Redressal Mechanism</strong</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>v. Grievance Redressal Committee</strong</td>
+                        <td><a href="https://www.gpadp.org.in/information/griavance_rederasal_committee.pdf">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>vi. Internal Complaint Committee</strong</td>
+                        <td><a href="https://www.gpadp.org.in/information/internal_complaint_committee.pdf">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>vii. Committee for SC/ST</strong</td>
+                        <td><a href="https://www.gpadp.org.in/information/committee_for_sc_st.pdf">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th>06.</th>
+                        <td><strong>Programmes</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>i. AICTE Approved Programmes(4)</strong></td>
+                        <td>
+                            <strong>Three(03) Years Diploma in</strong>
+                            <ul>
+                                <li>Mechanical Engineering</li>
+                                <li>Electrical Engineering,</li>
+                                <li>Metallurgy Enginnering</li>
+                                <li>Computer Sc. & Engineering</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>ii. Each Programme Details</strong></td>
+                        <td><a href="#">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th>07.</th>
+                        <td><strong>Faculty</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>i. Faculty Details(Permanent & Adjunct)</strong></td>
+                        <td><a href="#">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>ii. Permanent Faculty:Student Ratio</strong></td>
+                        <td><a href="#">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th>08.</th>
+                        <td><strong>Profile of Principal</strong></td>
+                        <td>
+                            <br><strong>Name :</strong> Mr. Birendra Prasad
+                            <br><strong>DOB :</strong> 16th October 1957
+                            <br><strong>UID:</strong> 5669-3843-9142
+                            <br><strong>Education Qualification :</strong> M.Tech.
+                            <br><strong>Work Experience:</strong> Teaching(32 Years)
+                            <br><strong>Area of Specialization :</strong> Power System
+                            <br><strong>Course Taught at Diploma Level :</strong> Electrical Engg.
+                            <br><strong>Email - </strong><a href="https://mail to:prasadbirendra27@gmail.com">prasadbirendra27@gmail.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>09.</th>
+                        <td><strong>Fee</strong></td>
+                        <td><a href="#">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th>10.</th>
+                        <td><strong>Admission</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>i. Sanctioned Seats</strong></td>
+                        <td><a href="#">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>ii. Admission Details(Category Wise)</strong></td>
+                        <td><a href="#">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th>11.</th>
+                        <td><strong>Admission Procedure</strong></td>
+                        <td>Students are being admitted through Jharkhand Combined Entrance Competitive Exam.</td>
+                    </tr>
+                    <tr>
+                        <th>12.</th>
+                        <td><strong>Criteria and Weightages for Admission</strong></td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <th>13.</th>
+                        <td><strong>List of Applicants</strong></td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <th>14.</th>
+                        <td><strong>Results of Admission Under Management Seats/Vacant Seats</strong></td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <th>15.</th>
+                        <td><strong>Information of Infrastructure and Other Resources</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>i. Infrastructure Details</strong></td>
+                        <td><a href="http://www.gpadp.org.in/information/infra.pdf">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>ii. Hostel Facility</strong></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>iii. Library</strong></td>
+                        <td><strong>Book Title - </strong>3400
+                            <br><strong>Book Volume - </strong>19229
+                            <br><strong>Journals - </strong>12
+                        </td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>iv. Laboratory and Workshop</strong></td>
+                        <td><a href="http://www.gpadp.org.in/information/labs.pdf">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>v. Computing Facilities</strong></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>vi. Games & Sports Facilities</strong></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong>vii. Soft Skill Development Facilities</strong></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <th>16.</th>
+                        <td><strong>Enrollment of students in the last 3 years</strong></td>
+                        <td><a href="#">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th>17.</th>
+                        <td><strong>List of Research Projects/Consultancy Works</strong></td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <th>18.</th>
+                        <td><strong>LOA and subsequent EoA till the current Academic Year</strong></td>
+                        <td>
+                            <br><a href="http://www.gpadp.org.in/information/eoa/1920.PDF">EoA 2019-20</a>
+                            <br><a href="http://www.gpadp.org.in/information/eoa/1819.PDF">EoA 2018-19</a>
+                            <br><a href="http://www.gpadp.org.in/information/eoa/1718.PDF">EoA 2017-18</a>
+                            <br><a href="http://www.gpadp.org.in/information/eoa/1617.PDF">EoA 2016-17</a>
+                            <br><a href="http://www.gpadp.org.in/information/eoa/1516.PDF">EoA 2015-16</a>
+                            <br><a href="http://www.gpadp.org.in/information/eoa/1415.PDF">EoA 2014-15</a>
+                            <br><a href="http://www.gpadp.org.in/information/eoa/1314.PDF">EoA 2013-14</a>
+                            <br><a href="http://www.gpadp.org.in/information/eoa/1213.pdf">EoA 2012-13</a>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>19.</th>
+                        <td><strong>Accounted audited statement of the last three years</strong></td>
+                        <td><a href="http://www.gpadp.org.in/information/audited_statement.pdf">Click Here for More Details</a></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><strong></strong></td>
+                        <td></td>
+                    </tr>
+               </table>
+            </div>  
+            <div id="footerarea">
+                <div class="foot">
+                    <h3>GET IN TOUCH</h3>
+                       <strong>Government Polytechic Adityapur</strong><br>
+                       Adityapur Industrial area<br>
+                       seraikella-kharsawan, jharkhand<br>
+                       PIN-832109<br><br>
+                       <ul>
+                           <li><a href="tel:+91-657 2383303">+91-657 2383303</a></li><br>
+                           <li><a href="https://mail to:gpa2010@rediffmail.com">gpa2010@rediffmail.com</a></li>
+                        </ul>
+                </div>
+                <div class="foot">
+                    <h3>MENU ITEMS</h3>
+                    <ol>
+                        <li><a href="student.html">Student Panel</a></li><br>
+                        <li><a href="admin.html">Admin Panel</a></li><br>
+                        <li><a href="download.html">Downloads</a></li><br>
+                        <li><a href="disclaimer.html">Disclaimer</a></li><br>
+                        <li><a href="privacy.html">Privacy Policy</a></li><br>
+                        <li><a href="refund.html">Refund policy</a></li><br>
+                    </ol>
+                </div>
+                <div class="foot">
+
+                </div>
+                <div class="foot">
+                    <h3>IMPORTANT LINKS</h3>
+                    <ol>
+                        <li><a href="https://www.education.gov.in/hi">MHRD</a></li><br>
+                        <li><a href="https://www.aicte-india.org/">AICTE</a></li><br>
+                        <li><a href="http://www.jharkhand.gov.in/">Govt. of Jharkhand</a></li><br>
+                        <li><a href="http://www.jharkhand.gov.in/new_depts/scite/scite_fr.html">Dept. of Higher, Technical Education & Skill Development</a></li><br>
+                        <li><a href="http://www.sbtejharkhand.nic.in/">SBTE Jhrakhand</a></li><br>
+                    </ol>
+                </div>
+            </div>
+            <div id="develop">
+                Developed By <a href="tel:8002825305">Anmol Mishra</a>
+            </div>
+        </div>
+    </body>
+</html>

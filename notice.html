@@ -1,0 +1,519 @@
+<html>
+    <head>
+        <title>NOTICE | GP Adityapur</title>
+        <link rel="stylesheet" href="css/font-awesome.css" type="text/css"/>
+        <style type="text/css">
+            body
+            {
+                background:rgb(194, 211, 212);
+                margin:0;
+                padding:0;
+            }
+            #mainarea
+            {
+                width:100%;
+                height:3120px;
+                margin:0;
+                padding:0;
+                font-size:30px;
+            }
+            #colorarea
+            {
+                width:100%;
+                float:left;
+                height:260px;
+                margin:0;
+                padding:0;
+                background:rgb(0, 132, 255);
+                box-shadow: 0px 0px 5px 0px black;
+            }
+            #update
+            {
+                width:100%;
+                height:30px;
+                float:left;
+                margin:0;
+                padding-top:5px;
+                text-align: center;
+                font-size:20px;
+                background:black;
+                color:white;
+            }
+            #logo
+            {
+                width:100%;
+                height:180px;
+                margin:0;
+                padding:0;
+                float:left;
+                text-align: center;
+            }
+            #logo #image 
+            {
+                width:20%;
+                height:180px;
+                float:left;
+            }
+            #logo #collegename
+            {
+                width:80%;
+                height:140px;
+                float:left;
+                font-size:48px;
+                padding:40px 0px 0px 0px;
+                color:white;
+                text-shadow:2px 2px 3px black;
+                word-spacing:10px;
+                font-family:  monospace;
+                font-weight:bold;
+            }
+            #menu
+            {
+                width:100%;
+                height:50px;
+                margin:0;
+                padding:0;
+                float:left;
+                font-weight:bold;
+                font-family: sans-serif;
+            }
+            #menu ul
+            {
+                list-style-type:none;
+                margin:0;
+                padding:0;
+            }
+            #menu ul li
+            {
+                transition: all 1s;
+                margin:0;
+                float:left;
+                font-size:15px;
+            }
+            #menu ul li a:link , #menu ul li a:visited
+            {
+                text-decoration:none;
+                color:white;
+                padding:18px 15px;
+                display: block;
+            }
+            #menu ul li:nth-child(5) i
+            {
+                color:brown;
+            }
+            #menu ul li:hover
+            {
+                font-size:16px;
+                background:black;
+            }
+            #menu ul li #color
+            {
+                color:brown;
+            }
+            #college
+            {
+                width:70%;
+                height:200px;
+                float:left;
+                text-align:center;
+                margin:0px 15% 0px 15%;
+                border-radius:0px 0px 50% 50%;
+                background:rgba(0, 132, 255, 0.801);
+            }
+            #tech
+            {
+                font-size:18px;
+                font-weight:bold;
+                color:black;
+                text-shadow:none;
+                word-spacing:none;
+                font-family:  sans-serif;
+            }
+            #paranotice
+            {
+                width:100%;
+                height:400px;
+                float:left;
+                margin:0;
+                padding:0;
+            }
+            #paragraph
+            {
+                width:60%;
+                height:400px;
+                float:left;
+                margin:0;
+                padding:0px 2% 0px 3%;
+            }
+            h3
+            {
+                color:white;
+                text-shadow:2px 2px 3px black;
+                word-spacing:10px;
+                font-family:  monospace;
+            }
+            #college h3
+            {
+                color:white;
+                text-shadow:2px 2px 3px black;
+                word-spacing:10px;
+                font-family:  monospace;
+                background:rgba(0, 0, 0, 0.377);
+                margin:0;
+                padding:30px 0px;
+            }
+            #paragraph #size
+            {
+                font-size:21px;
+                text-align: justify;
+                font-style: italic;
+            }
+            #more
+            {
+                width:16%;
+                height:24px;
+                float:left;
+                margin:0px 80% 0px 0px;
+                padding:8px 2%;
+                background:rgb(61, 60, 60);
+                border-radius: 10px;
+                box-shadow: 2px 3px 10px black;
+                color:white;
+                font-size:20px
+            }
+           #more ul
+           {
+               list-style-type:none;
+               margin:0;
+               padding:0;
+           }
+           #more a:link, #more a:visited
+           {
+               color:white;
+               text-decoration:none;
+               display:block;
+           }
+            #inotice
+            {
+                width:31%;
+                height:360px;
+                margin:20px 2%;
+                padding:0;
+                background:white;
+                border-radius:10%;
+                box-shadow:0px 0px 5px 0px black;
+                float:left;
+            }
+            #label
+            {
+                width:100%;
+                height:50px;
+                float:left;
+                margin:0;
+                padding:0;
+                color:rgb(255, 0, 13);
+                text-align:center;
+                font-weight:bold;
+                font-family:'Courier New', Courier, monospace;
+            }
+            #information 
+            {
+                width:100%;
+                height:310px;
+                float:left;
+                margin:0;
+                padding:0;
+                border-radius: 10%;
+                font-size:15px;
+            }
+            #information ul
+            {
+                list-style-type:square;
+            }
+            #information ul li a:link , #information ul li a:visited
+            {
+                text-decoration: none;
+                color:blue;
+            }
+            #information ul li a:hover
+            {
+                color:red;
+            }
+            #principle
+            {
+                width:100%;
+                height:335px;
+                float:left;
+                margin:0;
+                padding:0;
+            }
+            .meet
+            {
+                width:30%;
+                height: 40px;
+                float:left;
+                background:rgb(61, 60, 60);
+                margin:30px 35% 30px 35%;
+                padding:40px 0px 0p0x 0px;
+                border-radius:20px;
+                text-align:center;
+                color:white;
+                font-size:35px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight:bold;
+                box-shadow:0px 0px 5px 0px rgb(36, 33, 33);
+            }
+            #statement
+            {
+                height:2220px;
+                width:90%;
+                float:left;
+                margin:0;
+                padding:50px 5%;
+                font-size:18px;
+                font-family: sans-serif;
+                text-align:justify;
+            }
+            #statement ul li i
+            {
+                color:black;
+            }
+            #statement ul 
+            {
+                list-style-type:none;
+            }
+            #statement ul li
+            {}
+            #statement ul li a:link , #statement ul li a:visited
+            {
+                text-decoration: none;
+                color:rgb(24, 24, 255);
+            }
+            #statement ul li a:hover
+            {
+                color:red;
+            }
+            h2
+            {
+                color:rgb(0, 132, 255);
+                font-weight:bold;
+                text-shadow:1px 2px 1px black;
+            }
+            #footerarea
+            {
+                width:100%;
+                height:400px;
+                padding:0;
+                margin:0;
+                float:left;
+                background:rgb(34, 36, 34);
+            }
+            .foot
+            {
+                width:19%;
+                height:360px;
+                padding:20px 3%;
+                margin:0;
+                float:left;
+                color:white;
+                font-size:20px;
+            }
+            .foot h3
+            {
+                color:white;
+                font-size:25px;
+                font-weight: lighter;
+            }
+            .foot ul
+            {
+                color:blue;
+                list-style-type: none;
+                margin:0px;
+                padding:0px;
+            }
+            .foot a:link, .foot a:visited
+            {
+                text-decoration:none;
+                color:rgb(44, 44, 255);
+            }
+            .foot a:hover
+            {
+                color:rgb(35, 35, 173)
+            }
+            .foot ol
+            {
+                color:rgb(44, 44, 255);
+                list-style-type: none;
+                margin:0px;
+                padding:0px;
+            }
+            .foot ol a:link, .foot ol a:visited
+            {
+                text-decoration:none;
+                color:rgb(180, 180, 179);
+            }
+            .foot ol a:hover
+            {
+                color:white;
+            }
+            .foot ol li
+            {
+                transition: transform 2s;
+            }
+            .foot ol li:hover
+            {
+                transform: translateX(20px);
+            }
+            #develop
+            {
+                width:100%;
+                height:50px;
+                background:rgb(34, 36, 34);
+                float:left;
+                text-align:center;
+                margin:0;
+                padding:0;
+                font-size:20px;
+                color:rgb(175, 175, 175)
+            }
+            #develop a:visited, #develop a:link
+            {
+                color:rgb(44, 44, 255);
+                text-decoration: none;;
+            }
+            #develop a:hover
+            {
+                color:rgb(35, 35, 173);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mainarea">
+            <div id="colorarea">
+                <div id="update">
+                    This site is updated on 31th december 2020
+                </div>
+                <div id="logo">
+                    <div id="image">
+                        <img src="logo.png"/>
+                    </div>
+                    <div id="collegename">
+                        GOVERNMENT POLYTECHIC, ADITYAPUR
+                        <p id="tech">Department of Higher, Technical Education & Skill Development, Govt. of Jharkhand</p>          
+                    </div>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="main.html" ><i class="fa fa-home "></i> HOME</a></li>
+                        <li></i><a href="aboutus.html"><i class="fa fa-list"></i> ABOUT US</a></li>
+                        <li><a href="admission.html"><i class="fa fa-graduation-cap"></i> ADMISSION</a></li>
+                        <li><a href="faculties.html"><i class="fa fa-user"></i> FACULTIES</a></li>
+                        <li><a href="notice.html" id="color"><i class="fa fa-file-pdf-o"></i> NOTICE</a></li>
+                        <li><a href="gallery.html"><i class="fa fa-camera"></i> GALLERY</a></li>
+                        <li><a href="contact.html"><i class="fa fa-phone-square"></i> CONTACT US</a></li>
+                        <li><a href="grievance.html"><i class="fa fa-envelope"></i> GRIEVANCE</a></li>
+                        <li><a href="disclosure.html"><i class="fa fa-file"></i> MANDETORY DISCLOSURE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="meet">
+                NOTICE
+            </div> 
+            <div id="statement">
+               <ul>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_2204976421.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Bonafide for e-Kalyan.<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_9512559035.pdf"><i class="fa fa-hand-o-right"></i> Regarding Form Fill-up of 2nd and 4th Semester Students.<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_8871822874.pdf"><i class="fa fa-hand-o-right"></i> Regarding e-Kalyan (SC, ST, OBC)<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_2553047975.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Sessional Exam. of 2nd and 4th Sem (All Branch) Regular, Lateral Entry and Spot Counselling Students<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_2543408651.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Result of 6th Sem CSE. Engg. (2017-20)<img src="new.gif"/> </a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_4658354660.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Result of 6th Sem Ele. Engg. (2017-20)<img src="new.gif"/> </a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_9811343131.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Result of 6th Sem Mech. Engg. (2017-20) <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_4396014166.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Result of 6th Sem Met. Engg. (2017-20) <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_235745771.pdf""><i class="fa fa-hand-o-right"></i> Fee structure of newly admitted student (2020-21) and procedure of online fee payment<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_359739433.pdf""><i class="fa fa-hand-o-right"></i> Notice regarding Programme of 4th Semester Diploma Summer (Spl) Exam-2020 (Backlog Paper Clearance).<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_2480156146.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding 1st Sem Sopt Counselling and 3rd Sem Lateral Entry Spot Counselling.<img src="new.gif"/> </a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_5150126465.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding External Practical Exam of Mech. and Met. Students and Sessional of all Branches of 6th Semester -2017-20.<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_559385167.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding JUT Examination <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_3252672315.pdf"><i class="fa fa-hand-o-right"></i> Tender regarding books. <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_9747785232.pdf"><i class="fa fa-hand-o-right"></i> Regarding download of Admit Card <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_4757892121.pdf"><i class="fa fa-hand-o-right"></i> Regarding Form fill up of 1st Semester and 3rd Semester (Both from Spot Counselling in Jan 2020).<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_9167507160.pdf"><i class="fa fa-hand-o-right"></i> Regarding Exam Program of Diploma 1st, 2nd, 3rd, 4th and 5th Semester Summer (Spl) Exam 2020 (Backlog Paper Clearance).<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_8636284735.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding PTL. <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_5254790624.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding In-Plant Training<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_2445027758.pdf"><i class="fa fa-hand-o-right"></i> Cancellation of 6th Semester Exam-2020 and revised programme of old course 6th semester exam-2020<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_7101494977.pdf"><i class="fa fa-hand-o-right"></i> Programme of 6th Semester <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_8619478130.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding 1st to 6th Semester Back Log Paper<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_8440910871.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding 1st Sem. (Spot Counselling), 1st Sem Lateral Entry (Spot Counselling), 3rd Sem Lateral Entry (Spot Counselling) and 2nd Sem-2019-20.<img src="new.gif"/> </a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_8118223338.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding adjustment of Examination Fee for promoted students (Cancelled Exam.) <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_2342504393.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Provisional Regd. No. of Diploma Regular (Spot Counselling-2019-20) <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_7088350565.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Provisional Regd. No. of Diploma Lateral Entry (Spot Counselling-2019-20) <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_2050168714.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding online interview for Part Time Lecturer (2020-21).<img src="new.gif"/> </a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_7090396983.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding 6th Sem Regular and 1st to 6th Sem Back Log Paper<img src="new.gif"/> </a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_5977639197.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding 4th and 6th Semester Students<img src="new.gif"/> </a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_1040904545.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding 6th Semester Students. <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_8892965069.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Top Internships for Govt. Polytechnic students<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_8775508194.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Result of 3rd Sem Met. Enggg. (2018-21) <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_7259659948.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Result of 3rd Sem Mech. Engg. (2018-21) <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_145409004.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Result of 3rd Sem Electrical Engg. (2018-21)<img src="new.gif"/> </a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_2939484468.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Result of 3rd Sem CSE (2018-21)<img src="new.gif"/> </a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_8627621671.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Lateral Entry-2019-20 <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_9375709062.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Back Log Paper (2013-16, 2014-17, 2015-18, 2016-19 and 2017-20)<img src="new.gif"/> </a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_6048152148.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding Registration of 1st Semester / Lateral Entry students (Spot Counselling)<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_3183079790.pdf"><i class="fa fa-hand-o-right"></i> Routine of 2nd Semester (2019-20)<img src="new.gif"/> </a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_9387860321.pdf"><i class="fa fa-hand-o-right"></i> Routine of 6th Semester during Lock Down <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_7464314377.pdf"><i class="fa fa-hand-o-right"></i> Online Class during Lockdown Period Notice <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/AICTE_Lockdown.pdf"><i class="fa fa-hand-o-right"></i> AICTE guideline for institution during lock down<img src="new.gif"/> </a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_377013748.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding e-Kalyan <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_4131996226.pdf"><i class="fa fa-hand-o-right"></i> Notice and Class routine for Lateral Entry 3rd Semester-2019-20 (All Branch Spot Admitted) <img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_1912380396.pdf"><i class="fa fa-hand-o-right"></i> Revised Routine for 4th Semester Students<img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_6254007248.pdf"><i class="fa fa-hand-o-right"></i> Revised Routine for 1st Semester Spot Counselling Admitted (2019-20) (All Branch)<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_9341237731.pdf"><i class="fa fa-hand-o-right"></i> Notice for 1st Semester Spot Counselling Admitted and 4th Semester Regular Course (All Branch)<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_6498992028.pdf"><i class="fa fa-hand-o-right"></i> Notice and Class Routine of 3rd and 5th Semester Students-2019<img src="new.gif"/></a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_8138632243.pdf"><i class="fa fa-hand-o-right"></i> Class Routine of 1st Semester 2019<img src="new.gif"/> </a></li>
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_431675445.pdf"><i class="fa fa-hand-o-right"></i> Notice regarding 1st Sem Classes for session 2019-22<img src="new.gif"/></a></li> 
+                    <br><li><a href="http://gpadp.org.in/admin/uploads/notice_4466571318.pdf"><i class="fa fa-hand-o-right"></i> Challan <img src="new.gif"/></a></li>
+               </ul>
+            </div>  
+            <div id="footerarea">
+                <div class="foot">
+                    <h3>GET IN TOUCH</h3>
+                       <strong>Government Polytechic Adityapur</strong><br>
+                       Adityapur Industrial area<br>
+                       seraikella-kharsawan, jharkhand<br>
+                       PIN-832109<br><br>
+                       <ul>
+                           <li><a href="tel:+91-657 2383303">+91-657 2383303</a></li><br>
+                           <li><a href="https://mail to:gpa2010@rediffmail.com">gpa2010@rediffmail.com</a></li>
+                        </ul>
+                </div>
+                <div class="foot">
+                    <h3>MENU ITEMS</h3>
+                    <ol>
+                        <li><a href="student.html">Student Panel</a></li><br>
+                        <li><a href="admin.html">Admin Panel</a></li><br>
+                        <li><a href="download.html">Downloads</a></li><br>
+                        <li><a href="disclaimer.html">Disclaimer</a></li><br>
+                        <li><a href="privacy.html">Privacy Policy</a></li><br>
+                        <li><a href="refund.html">Refund policy</a></li><br>
+                    </ol>
+                </div>
+                <div class="foot">
+
+                </div>
+                <div class="foot">
+                    <h3>IMPORTANT LINKS</h3>
+                    <ol>
+                        <li><a href="https://www.education.gov.in/hi">MHRD</a></li><br>
+                        <li><a href="https://www.aicte-india.org/">AICTE</a></li><br>
+                        <li><a href="http://www.jharkhand.gov.in/">Govt. of Jharkhand</a></li><br>
+                        <li><a href="http://www.jharkhand.gov.in/new_depts/scite/scite_fr.html">Dept. of Higher, Technical Education & Skill Development</a></li><br>
+                        <li><a href="http://www.sbtejharkhand.nic.in/">SBTE Jhrakhand</a></li><br>
+                    </ol>
+                </div>
+            </div>
+            <div id="develop">
+                Developed By <a href="tel:8002825305">Anmol Mishra</a>
+            </div>
+        </div>
+    </body>
+</html>

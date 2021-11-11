@@ -1,0 +1,956 @@
+<html>
+    <head>
+        <title>GP adityapur</title>
+        <link rel="stylesheet" href="css/font-awesome.css" type="text/css"/>
+        <style type="text/css">
+            @keyframes logo
+            {
+                Form
+                {
+                    transform:rotate(360deg);
+                }
+                to
+                {
+                    transform:rotate(0deg);
+                }
+            }
+            body
+            {
+                background:rgb(194, 211, 212);
+                margin:0;
+                padding:0;
+            }
+            #mainarea
+            {
+                width:100%;
+                height:4600px;
+                margin:0;
+                padding:0;
+                font-size:30px;
+            }
+            #colorarea
+            {
+                width:100%;
+                float:left;
+                height:1500px;
+                margin:0;
+                padding:0;
+                background:rgb(0, 132, 255);
+                border-radius:0px 0px 10% 10%;
+                box-shadow: 0px 0px 5px 0px black;
+            }
+            #update
+            {
+                width:100%;
+                height:30px;
+                float:left;
+                margin:0;
+                padding-top:5px;
+                text-align: center;
+                font-size:20px;
+                background:black;
+                color:white;
+            }
+            #logo
+            {
+                width:100%;
+                height:170px;
+                margin:10px 0px 0px 0px;
+                padding:0;
+                float:left;
+                text-align: center;
+                transform:rotate(360deg);
+                animation:logo 1s ease-out 1;
+            }
+            #cool
+            {
+                transition: all 0.5s;
+            }
+            #cool:hover
+            {
+                transform:scale(0.9,0.9);
+            }
+            #menu
+            {
+                width:100%;
+                height:50px;
+                margin:0;
+                padding:0;
+                float:left;
+                font-weight:bold;
+                font-family: sans-serif;
+            }
+            #menu ul
+            {
+                list-style-type:none;
+                margin:0;
+                text-align:center;
+                padding:0;
+            }
+            #menu ul li
+            {
+                transition: all 0.5s;
+                margin:0;
+                float:left;
+                font-size:15px;
+                margin:0 20px;
+                padding:0 20px;
+            }
+            #menu ul li a:link , #menu ul li a:visited
+            {
+                text-decoration:none;
+                color:white;
+                padding:18px 15px;
+                display: block;
+            }
+            #menu ul li:first-child i
+            {
+                color:brown;
+            }
+            #menu ul li:hover
+            {
+                font-size:15px;
+                background:black;
+            }
+            #menu ul li #color
+            {
+                color:brown;
+            }
+            #image
+            {
+                width:100%;
+                height: 500px;
+                float:left;
+                padding:0;
+                margin:0;
+                background:url('back2.jpg');
+            }
+            #college
+            {
+                width:70%;
+                height:200px;
+                float:left;
+                text-align:center;
+                margin:0px 15% 0px 15%;
+                border-radius:0px 0px 50% 50%;
+                background:rgba(0, 132, 255, 0.801);
+            }
+            #college h3
+            {
+                color:white;
+                text-shadow:2px 2px 3px black;
+                word-spacing:10px;
+                font-family:  monospace;
+                transition: all 0.5s;
+            }
+            #college h3:hover
+            {
+                letter-spacing:3px;
+            }
+            #tech
+            {
+                font-size:20px;
+                font-weight:bold;
+                color:white;
+            }
+            #paranotice
+            {
+                width:100%;
+                height:400px;
+                float:left;
+                margin:0;
+                padding:0;
+            }
+            #paragraph
+            {
+                width:60%;
+                height:400px;
+                float:left;
+                margin:0;
+                padding:0px 2% 0px 3%;
+            }
+            h3
+            {
+                color:white;
+                text-shadow:2px 2px 3px black;
+                word-spacing:10px;
+                font-family:  monospace;
+            }
+            #college h3
+            {
+                color:white;
+                text-shadow:2px 2px 3px black;
+                word-spacing:10px;
+                font-family:  monospace;
+                background:rgba(0, 0, 0, 0.377);
+                margin:0;
+                padding:30px 0px;
+            }
+            #paragraph #size
+            {
+                font-size:21px;
+                text-align: justify;
+                font-style: italic;
+            }
+            #more
+            {
+                width:18%;
+                height:24px;
+                float:left;
+                margin:0px 80% 0px 0px;
+                padding:10px 1%;
+                background:rgb(61, 60, 60);
+                border-radius: 10px;
+                box-shadow: 2px 3px 10px black;
+                color:white;
+                font-size:20px;
+                text-align: center;
+                transition: all 2s;
+            }
+            #more:hover
+            {
+                transform:translate(10px,0px);
+            }
+           #more ul
+           {
+               list-style-type:none;
+               margin:0;
+               padding:0;
+           }
+           #more a:link, #more a:visited
+           {
+               color:white;
+               text-decoration:none;
+               display:block;
+           }
+            #inotice
+            {
+                width:31%;
+                height:360px;
+                margin:20px 2%;
+                padding:0;
+                background:white;
+                border-radius:10%;
+                box-shadow:0px 0px 5px 0px black;
+                float:left;
+            }
+            #label
+            {
+                width:100%;
+                height:50px;
+                float:left;
+                margin:0;
+                padding:0;
+                color:rgb(255, 0, 13);
+                text-align:center;
+                font-weight:bold;
+                font-family:'Courier New', Courier, monospace;
+            }
+            #information 
+            {
+                width:100%;
+                height:310px;
+                float:left;
+                margin:0;
+                padding:0;
+                border-radius: 10%;
+                font-size:15px;
+            }
+            #information ul
+            {
+                list-style-type:square;
+            }
+            #information ul li a:link , #information ul li a:visited
+            {
+                text-decoration: none;
+                color:blue;
+            }
+            #information ul li a:hover
+            {
+                color:red;
+            }
+            #principle
+            {
+                width:100%;
+                height:335px;
+                float:left;
+                margin:0;
+                padding:0;
+            }
+            #meet
+            {
+                width:30%;
+                height: 60px;
+                float:left;
+                background:rgb(61, 60, 60);
+                margin:0px 35% 0px 35%;
+                padding:20px 0px 0px 0px;
+                border-radius:20px;
+                text-align:center;
+                color:white;
+                font-size:30px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight:bold;
+                box-shadow:0px 0px 5px 0px rgb(36, 33, 33);
+            }
+            #pphoto
+            {
+                width:100%;
+                float: left;
+                height: 180px;
+               text-align:center;
+                margin:0;
+                padding:20px 0px 0px 0px;
+            }
+            #edit
+            {
+                transition:all 1s;
+                box-shadow: 1px 1px 10px 1px black;
+            }
+            #edit:hover
+            {
+                transform:scale(1.09,1.09);
+                border-radius:30%
+            }
+            #name
+            {
+                width:100%;
+                float: left;
+                height: 55px;
+                margin:0;
+                padding:0;
+                text-align:center;
+                color:white;
+                text-shadow: 2px 2px 2px black;
+                font-family: sans-serif;
+            }
+            #message
+            {
+                width:100%;
+                height:400px;
+                padding:0;
+                margin:0;
+                float:left;
+            }
+            #statement
+            {
+                width:90%;
+                height:210px;
+                padding:30px 5% 0px 5%;
+                margin:0;
+                float:left;
+                font-style: italic;
+                font-size:20px;
+                text-align:justify;
+            }
+            #sign
+            {
+                width:95%;
+                height:80px;
+                float:left;
+                margin:0px 5% 0px 0px;
+                padding:0;
+            }
+            #box
+            {
+                width:20%;
+                height:80px;
+                float:right;
+                text-align: right;
+                margin:0;
+                padding:0;
+                font-size:20px;
+            }
+            #gallery
+            {
+                width:100%;
+                height:500px;
+                padding:0;
+                margin:0;
+                float:left;
+            }
+            #gallery .size1
+            {
+                height:240px;
+                width:34%;
+                float:left;
+                margin:20px 0px 0px 0px;
+                padding:30px 3%;
+            }
+            #view
+            {
+                width:20%;
+                height:100px;
+                float:left;
+                margin:0px 30% 0px 50%;
+                padding:0;
+                text-align: center;
+                
+            }
+            #view ul
+            {
+                list-style-type:none;
+                margin:0;
+                padding:0px 0px 0px 40px;
+            }
+            #view ul li
+            {
+            }
+            #view ul li a:link, #view ul li a:visited
+            {
+                background:rgba(0, 132, 255, 0.801);
+                color:white;
+                display:block;
+                text-decoration:none;
+                border-radius:40px;
+                font-size:20px;
+                padding:15px 15px 15px 15px;
+                margin:-15px 60px 0px 0px;
+                font-weight:bold;
+                font-family:sans-serif;
+                transition: all 0.5s;
+                box-shadow:0px 0px 5px 0px black
+            }
+            #view ul li a:hover
+            {
+                background:rgb(194, 211, 212);
+                color:rgba(0, 132, 255, 0.801);
+                border:solid 2px rgba(0, 132, 255, 0.801);
+            }
+            #photo2
+            {
+                width:100%;
+                height:240px;
+                transition: all 1s;
+            }
+            #photo2:hover , .photo1:hover
+            {
+                border-radius: 20% 0px 20% 0px;
+                box-shadow:0px 0px 10px 0px black;
+            }
+            .photo1
+            {
+                width:100%;
+                transition: all 1s;
+                height:240px;
+            }
+            #gallery #size2
+            {
+                height:240px;
+                width:54%;
+                float:left;
+                margin:20px 0px 0px 0px;
+                padding:30px 3%;
+            }
+            #insfra
+            {
+                width:100%;
+                height:300px;
+                float:left;
+                margin:0px ;
+                padding:0;
+            }
+            .structure
+            {
+                width:33%;
+                height:300px;
+                float:left;
+                margin:0;
+                padding:0;
+                transition: all 1s;
+                border-right:solid 0.3px rgb(128, 115, 115)
+            }
+            .structure:hover
+            {
+                box-shadow:0px 0px 5px 0px black;
+            }
+            .structure:last-child
+            {
+                border:none;
+            }
+            #insfra .structure .image
+            {
+                width:100%;
+                height:140px;
+                float:left;
+                margin:0;
+                padding:20px 0px 0px 0px;
+                text-align:center;
+            }
+            #insfra .structure .text
+            {
+                width:90%;
+                height:140px;
+                float:left;
+                margin:0;
+                padding:0px 5% 0px 5%;
+                text-align:center;
+                font-size:17px
+            }
+            #insfra .structure h6
+            {
+                margin:0;
+                padding:30px 0px 20px 0px ;
+                text-align:center;
+                font-family:sans-serif;
+                color:rgb(54, 49, 49);
+                font-size:25px;
+            }
+            #course
+            {
+                width:100%;
+                height:1100px;
+                float:left;
+                margin:0;
+                padding:0;
+            }
+            .writec
+            {
+                width:30%;
+                height:65px;
+                padding:10px 0px 0px 0px;
+                margin:0px 35% 70px 35%;
+                float:left;
+                color:rgb(51, 49, 49);
+                text-align:center;
+                font-weight:bold;
+                font-family:sans-serif;
+                text-shadow: 1px 1px 2px rgb(10, 5, 5);
+                border-bottom:solid 5px rgb(0, 132, 255);
+            }
+            .branch
+            {
+                width:520px;
+                height:250px;
+                float:left;
+                margin:0;
+                text-align: center;
+                padding:0;
+            }
+            .line
+            {
+                width:920px;
+                height:250px;
+                float:left;
+                margin:0;
+                padding:0px 20px 0px 47px;
+                text-align: left;
+            }
+            .explain
+            {
+                font-size:20px;
+            }
+            #course .line h4
+            {
+                font-weight:bold;
+                font-family: sans-serif;
+            }
+            .line ul
+            {
+                list-style-type: none;
+                margin:0;
+                padding:0;
+            }
+            .line ul li
+            {
+                padding:0;
+              
+            }
+            .line ul li a:link, .line ul li a:visited
+            {
+                transition: all 1s;
+                background:rgb(0, 132, 255);
+                text-align:center;
+                margin:0px 80% 0px 0px;
+                padding: 10px 0px 10px 0px;
+                border-radius:20px;
+                color:white;
+                display:block;
+                text-decoration:none;
+                font-size:20px;
+                font-family:sans-serif;
+                font-weight:bold;
+                box-shadow:1px 1px 2px 1px black;
+               
+            }
+            .line ul li a:hover
+            {
+                transform:translate(15px,0px);
+                background:rgb(34, 36, 34);
+                display:block;
+            }
+            #location
+            {
+                width:100%;
+                height:400px;
+                padding:0;
+                margin:0;
+                float:left;
+            }
+            .write
+            {
+                width:30%;
+                height:65px;
+                padding:10px 0px 0px 0px;
+                margin:0px 35% 0px 35%;
+                float:left;
+                color:rgb(51, 49, 49);
+                text-align:center;
+                font-weight:bold;
+                font-family:sans-serif;
+                text-shadow: 1px 1px 2px rgb(10, 5, 5);
+                border-bottom:solid 5px rgb(0, 132, 255);
+            }
+            #map
+            {
+                width: 100%;
+                height:265px;
+                padding:0px;
+                margin:30px 0px 30px 0px;
+                float:left;
+                text-align:center;
+            }
+            #shadow
+            {
+                transition: box-shadow 2s,transform 2s;
+            }
+            #shadow:hover
+            {
+                box-shadow:0px 0px 5px 0px black;
+                transform:scale(1.1,1);
+            }
+            #footerarea
+            {
+                width:100%;
+                height:400px;
+                padding:0;
+                margin:0;
+                float:left;
+                background:rgb(34, 36, 34);
+            }
+            .foot
+            {
+                width:27%;
+                height:360px;
+                padding:20px 3%;
+                margin:0;
+                float:left;
+                color:white;
+                font-size:20px;
+
+            }
+            .foot h3
+            {
+                color:white;
+                font-size:25px;
+                font-weight: lighter;
+            }
+            .foot ul
+            {
+                color:blue;
+                list-style-type: none;
+                margin:0px;
+                padding:0px;
+            }
+            .foot a:link, .foot a:visited
+            {   
+                text-decoration:none;
+                color:rgb(44, 44, 255);
+            }
+            .foot a:hover
+            {
+                color:rgb(35, 35, 173)
+            }
+            .foot ol
+            {
+                color:rgb(44, 44, 255);
+                list-style-type: none;
+                margin:0px;
+                padding:0px;
+            }
+            .foot ol a:link, .foot ol a:visited
+            {
+                text-decoration:none;
+                color:rgb(180, 180, 179);
+            }
+            .foot ol a:hover
+            {
+               
+                color:white;
+            }
+            .foot ol li
+            {
+                transition: transform 2s;
+            }
+            .foot ol li:hover
+            {
+                transform: translateX(20px);
+            }
+            #develop
+            {
+                width:100%;
+                height:50px;
+                background:rgb(34, 36, 34);
+                float:left;
+                text-align:center;
+                margin:0;
+                padding:0;
+                font-size:20px;
+                color:rgb(175, 175, 175)
+            }
+            #develop a:visited, #develop a:link
+            {
+                color:rgb(44, 44, 255);
+                text-decoration: none;;
+            }
+            #develop a:hover
+            {
+                color:rgb(35, 35, 173);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mainarea">
+            <div id="colorarea">
+                <div id="update">
+                    This site is updated on 31<sup>th</sup> december 2020
+                </div>
+                <div id="logo">
+                    <img src="logo.png" id="cool"/>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#"  id="color"><i class="fa fa-home "></i> HOME</a></li>
+                        <li></i><a href="aboutus.html"><i class="fa fa-list"></i> ABOUT US</a></li>
+                        <li><a href="admission.html"><i class="fa fa-graduation-cap"></i> ADMISSION</a></li>
+                        <li><a href="faculties.html"><i class="fa fa-user"></i> FACULTIES</a></li>
+                        <li><a href="notice.html"><i class="fa fa-file-pdf-o"></i> NOTICE</a></li>
+                        <li><a href="gallery.html"><i class="fa fa-camera"></i> GALLERY</a></li>
+                        <li><a href="contact.html"><i class="fa fa-phone-square"></i> CONTACT US</a></li>
+                        <li><a href="grievance.html"><i class="fa fa-envelope"></i> GRIEVANCE</a></li>
+                        <li><a href="disclosure.html"><i class="fa fa-file"></i> MANDETORY DISCLOSURE</a></li>
+                    </ul>
+                </div>
+                <div id="image">
+                    <div id="college">
+                        <h3>GOVERNMENT POLYTECHNIC, ADITYAPUR</h3>
+                        <p id="tech">Department of Higher, Technical Education & Skill Development, Govt. of Jharkhand</p>
+                    </div>
+                </div>
+                <div id="paranotice">
+                    <div id="paragraph">
+                        <h3>GOVERNMENT POLYTECHIC, ADITYAPUR</h3>
+                        <p id="size"><strong> Government Polytechnic, Adityapur</strong> is among one of the 17 Polytechnics in Jharkhand founded to groom the technical manpower and contribute to our state and country through excellence in scientific and technical education. It was established in the year 1980, by <strong>the Department of Science and Technology, Govt. of Bihar.</strong>, to promote the academic growth among the tribal community in particular and to serve as a valuable resource for industry and society in general. After bifurcation from Bihar on 14th November, 2000, this institute is currently inching new heights everyday under the efficient guidance of<strong> Department of Higher, Technical Education & Skill Development, Government of Jharkhand</strong>.. The Institute is totally funded by the state government.
+
+                        </p>
+                        <div id="more">
+                            <ul>
+                                <li><a href="aboutus.html">View More  <i class="fa fa-send"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="inotice">
+                        <div id="label">
+                            IMPORTANT NOTICE
+                        </div>
+                        <div id="information">
+                            <marquee height="280px" scrollamount="2" behavior="scroll" width="95%" direction="up" onmouseover="this.stop()" onmouseout="this.start()">
+                            <ul>
+                                <li><a href="http://gpadp.org.in/admin/uploads/notice_2204976421.pdf">Notice regarding Bonafide for e-Kalyan.</a></li><br>
+                                <li><a href="http://gpadp.org.in/admin/uploads/notice_9512559035.pdf">Regarding Form Fill-up of 2nd and 4th Semester Students.</a> </li><br>
+                                <li><a href="http://gpadp.org.in/admin/uploads/notice_8871822874.pdf">Regarding e-Kalyan (SC, ST, OBC)</a> </li><br>
+                                <li><a href="http://gpadp.org.in/admin/uploads/notice_2553047975.pdf">Notice regarding Sessional Exam. of 2nd and 4th Sem (All Branch) Regular, Lateral Entry and Spot Counselling Students</a> </li><br>
+                                <li><a href="http://gpadp.org.in/admin/uploads/notice_2543408651.pdf">Notice regarding Result of 6th Sem CSE. Engg. (2017-20)</a> </li><br>
+                                <li><a href="http://gpadp.org.in/admin/uploads/notice_4658354660.pdf">Notice regarding Result of 6th Sem Ele. Engg. (2017-20) </a></li><br>
+                                <li><a href="http://gpadp.org.in/admin/uploads/notice_9811343131.pdf">Notice regarding Result of 6th Sem Mech. Engg. (2017-20)</a> </li><br>
+                                <li><a href="http://gpadp.org.in/admin/uploads/notice_4396014166.pdf">Notice regarding Result of 6th Sem Met. Engg. (2017-20)</a> </li><br>
+                                <li><a href="http://gpadp.org.in/admin/uploads/notice_235745771.pdf">Fee structure of newly admitted student (2020-21) and procedure of online fee payment</a> </li><br>
+                                <li><a href="http://gpadp.org.in/admin/uploads/notice_359739433.pdf">Notice regarding Programme of 4th Semester Diploma Summer (Spl) Exam-2020 (Backlog Paper Clearance).</a> </li><br>
+                                <li><a href="http://gpadp.org.in/admin/uploads/notice_2480156146.pdf">Notice regarding 1st Sem Sopt Counselling and 3rd Sem Lateral Entry Spot Counselling.</a> </li><br>
+                                <li><a href="http://gpadp.org.in/admin/uploads/notice_5150126465.pdf">Notice regarding External Practical Exam of Mech. and Met. Students and Sessional of all Branches of 6th Semester -2017-20.</a> </li><br>
+                            </ul>
+                            </marquee>  
+                        </div>
+                    </div>
+                </div>
+                <div id="principle">
+                    <div id="meet">
+                        MEET OUR PRINCIPLE
+                    </div>
+                    <div id="pphoto">
+                        <img src="principle.jpg" id="edit"/>
+                    </div>
+                    <div id="name">
+                        MR. Birendra Prasad
+                    </div>
+                </div>
+            </div>
+            <div id="message">
+                <div class="write">
+                    <p>PRINCIPLE MESSAGE</p>
+                </div>
+                <div id="statement">
+                    This is the era of liberalization, privatization and globalization. The need of the hour is training individuals in dynamic way and make them to face different challenges thrown up by rapidly changing socio-economic technical scenario at the Global level. The Younger Generation must strive to develop into a well rounded personality with excellent Technical, Managerial, interpersonal and communication skills poised at the cutting-edge of Technology.
+
+                    In this context, Government Polytechnic, Adityapur is using it's best effort to impart technical training on the base of holistic approach.
+
+                    I am happy to be a part of this Dynamic and Vibrant Institute of <strong>Department of Higher, Technical Education & Skill Development, Government of Jharkhand.</strong>strong My endeavor is to introduce a pioneering course of growth to achieve the height of excellence and become an important force to recon with in the field of Technical education Vision global Scenario.
+                </div>
+                <div id="sign">
+                    <div id="box">
+                        <strong>Mr. Birendra Prasad</strong><br><br>
+                        Lecturer(SG)-cum-Principal
+                    </div>
+                </div>
+            </div>
+            <div id="gallery">
+                <div class="write">
+                   <p>GALLERY</p>
+                </div>
+                <div id="size2">
+                    <img src="college.png" id="photo2"/>
+                </div>
+                <div class="size1">
+                    <img src="gallery1.jpg" class="photo1"/>
+                </div>
+                <div id="view">
+                    <ul>
+                        <li><a href="gallery.html">VIEW MORE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="insfra">
+               <div class="structure">
+                    <div class="image">
+                        <img src="admission.png"/>
+                    </div>
+                    <div class="text">
+                        <h6>ADMISSION</h6>
+                        Admission is taken on the basis of list of candidates received from JCECEB within a specified period with relevant documents, Certificates and Fees etc.
+                    </div>
+               </div>
+               <div class="structure">
+                   <div class="image">
+                        <img src="fact.png"/>
+                   </div>
+                   <div class="text">
+                    <h6>FACULTIES</h6>
+                    The Government Polytechic Adityapur has a well-established Library for students and the teaching staff. The college is having spacious central workshops.
+                     </div>
+                </div>
+                <div class="structure">
+                   <div class="image">
+                        <img src="placement.png"/>
+                   </div>
+                   <div class="text">
+                    <h6>PLACEMENT</h6>
+                    Placement Cell is an integral part of the institute. The institute has provided complete infrastructure for effective functioning of the cell.
+                    </div>
+                </div>
+            </div>
+            <div id="course">
+                <div class="writec">
+                    <p>COURSES</p>
+                </div>
+                <div class="branch">
+                    <img src="mech.png"/>
+                </div>
+                <div class="line">
+                    <h4>MECHANICAL ENGINEERING</h4>
+                    <p class="explain">
+                        3 Years Diploma in Mechanical Engineering course affiliated by All India Council of Technical Education(AICTE), New Delhi.                   
+                    </p>
+                    <ul>
+                        <li><a href="http://jutranchi.ac.in/?page_id=221"><i class="fa fa-book"></i> SYLLABUS</a></li>
+                    </ul><hr>
+                </div>
+                <div class="line">
+                    <h4>ELECTRICAL ENGINEERING</h4>
+                    <p class="explain">
+                        3 Years Diploma in Electrical Engineering course affiliated by All India Council of Technical Education(AICTE), New Delhi.
+                    </p>
+                    <ul>
+                        <li><a href="http://jutranchi.ac.in/?page_id=221"><i class="fa fa-book"></i> SYLLABUS</a></li>
+                    </ul><hr>
+                </div>
+                <div class="branch">
+                    <img src="elec.png"/>
+                </div>
+                <div class="branch">
+                    <img src="metal.png"/>
+                </div>
+                <div class="line">
+                   <h4>METALLURGICAL ENGINEERING</h4>
+                   <p class="explain">
+                        3 Years Diploma in Metallurgical Engineering course affiliated by All India Council of Technical Education(AICTE), New Delhi.
+                   </p>
+                   <ul>
+                        <li><a href="http://jutranchi.ac.in/?page_id=221"><i class="fa fa-book"></i> SYLLABUS</a></li>
+                   </ul>
+                <hr>
+                </div>
+                <div class="line">
+                    <h4>COMPUTER SC. & ENGINEERING</h4>
+                    <p class="explain">
+                        3 Years Diploma in Computer Science & Engineering course affiliated by All India Council of Technical Education(AICTE), New Delhi.
+                    </p>
+                    <ul>
+                        <li><a href="http://jutranchi.ac.in/?page_id=221"><i class="fa fa-book"></i> SYLLABUS</a></li>
+                    </ul>
+                    <hr>
+                    
+                </div>
+                <div class="branch">
+                    <img src="computer.png"/>
+                </div>
+            </div>
+            <div id="location">
+                <div class="write">
+                    <p>LOCATION</p>
+                </div>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.296723001533!2d86.14835191447405!3d22.79146658507062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e4ebc5635b9d%3A0x670b047b510243f2!2sGovernment%20Polytechnic%20Adityapur!5e0!3m2!1sen!2sin!4v1609675315448!5m2!1sen!2sin" width="1000px" height="265px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="shadow"></iframe>
+                </div>
+            </div>
+            <div id="footerarea">
+                <div class="foot">
+                    <h3>GET IN TOUCH</h3>
+                       <strong>Government Polytechic Adityapur</strong><br>
+                       Adityapur Industrial area<br>
+                       seraikella-kharsawan, jharkhand<br>
+                       PIN-832109<br><br>
+                       <ul>
+                           <li><a href="tel:+91-657 2383303">+91-657 2383303</a></li><br>
+                           <li><a href="https://mail to:gpa2010@rediffmail.com">gpa2010@rediffmail.com</a></li>
+                        </ul>
+                </div>
+                <div class="foot">
+                    <h3>MENU ITEMS</h3>
+                    <ol>
+                        <li><a href="student.html">Student Panel</a></li><br>
+                        <li><a href="admin.html">Admin Panel</a></li><br>
+                        <li><a href="download.html">Downloads</a></li><br>
+                        <li><a href="disclaimer.html">Disclaimer</a></li><br>
+                        <li><a href="privacy.html">Privacy Policy</a></li><br>
+                        <li><a href="refund.html">Refund policy</a></li><br>
+                    </ol>
+                </div>
+                <div class="foot">
+                    <h3>IMPORTANT LINKS</h3>
+                    <ol>
+                        <li><a href="https://www.education.gov.in/hi">MHRD</a></li><br>
+                        <li><a href="https://www.aicte-india.org/">AICTE</a></li><br>
+                        <li><a href="http://www.jharkhand.gov.in/">Govt. of Jharkhand</a></li><br>
+                        <li><a href="http://www.jharkhand.gov.in/new_depts/scite/scite_fr.html">Dept. of Higher, Technical Education & Skill Development</a></li><br>
+                        <li><a href="http://www.sbtejharkhand.nic.in/">SBTE Jhrakhand</a></li><br>
+                    </ol>
+                </div>
+            </div>
+            <div id="develop">
+                Developed By <a href="tel:8002825305">Anmol Mishra</a>
+            </div>
+        </div>
+    </body>
+</html>
+<script src="snow.js">
+</script>
